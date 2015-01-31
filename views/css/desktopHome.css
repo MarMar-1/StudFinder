@@ -1,3 +1,14 @@
+#content_class{
+	position: auto;
+}
+
+
+
+#new_group_form_class{
+	position: absolute;
+	left: -999em;
+}
+
 #create_new_group{
 	color: #1E90FF;
 	width: 1000px; 
