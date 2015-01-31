@@ -1,4 +1,9 @@
-input[type = submit] {
+#create_new_group{
 	width: 20 em; 
-	height: 30 2 em;
+	height: 30 em;
+}
+
+#advanced_search{
+	width: 20 em;
+	height: 30 em;
 }
