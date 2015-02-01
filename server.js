@@ -2,6 +2,10 @@
 //  OpenShift sample Node application
 var express = require('express');
 var fs      = require('fs');
+// var groups = require('./routes/groups.js')
+// var database = require('./mongoDB.js')
+
+
 
 
 /**
@@ -31,6 +35,17 @@ var SampleApp = function() {
             console.warn('No OPENSHIFT_NODEJS_IP var, using 127.0.0.1');
             self.ipaddress = "127.0.0.1";
         };
+
+        // default to a 'localhost' configuration:
+        var connection_string = '127.0.0.1:27017/StudyFinder';
+        // if OPENSHIFT env variables are present, use the available connection info:
+        if(process.env.OPENSHIFT_MONGODB_DB_PASSWORD){
+          connection_string = process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+          process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
+          process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
+          process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
+          process.env.OPENSHIFT_APP_NAME;
+        }
     };
 
 
@@ -113,7 +128,7 @@ var SampleApp = function() {
      */
     self.initializeServer = function() {
         self.createRoutes();
-        self.app = express.createServer();
+        self.app = express();
 
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
@@ -142,6 +157,14 @@ var SampleApp = function() {
         //  Start the app on the specific interface (and port).
 
         self.app.use(express.static('static'))
+
+        var bodyParser = require('body-parser')
+        var groups = require('./routes/groups.js')
+
+        self.app.use(express.json());
+        self.app.use(express.urlencoded());
+
+        self.app.post('/groups', groups.post)
         
         self.app.listen(self.port, self.ipaddress, function() {
             console.log('%s: Node server started on %s:%d ...',
