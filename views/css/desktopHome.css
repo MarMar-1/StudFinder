@@ -1,22 +1,59 @@
-#content_class{
+.content{
+    overflow-x: hidden;
+    overflow-y: auto;
 	position: auto;
 }
-
-
 
 #new_group_form_class{
 	position: absolute;
 	left: -999em;
 }
 
+body {
+    overflow: hidden;
+    background-image: url("https://scholarship.rice.edu/bitstream/handle/1911/70821/wrc00312.jpg?sequence=1") ;
+    background-repeat: 2;
+    background-size: 750px 606px;
+    background-position: right: 0;
+}
+
+
 #create_new_group{
-	color: #1E90FF;
-	width: 1000px; 
-	height: 1000px;
+	height: 100px;
+    width: 400px;
+    border-color: #6495ED;
+    background-color: #BCD2EE;
+    border-radius: 13px;
+    margin: left;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+    font-family: Times;
+    font-size: 20px;
+    position: fixed;
+    top: 30px;
+    left: 100px;
 }
 
 #advanced_search{
-	color: #1E90FF;
-	width: 1000px;
-	height: 1000px;
+	height: 100px;
+    width: 400px;
+    border-color: #6495ED;
+    background-color: #BCD2EE;
+    border-radius: 13px;
+    margin: right;
+    text-align:center;
+    text-decoration: none;
+    color: black;
+    font-family: Times;
+    font-size: 20px;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+}
+
+.quick_search_div{
+    position: absolute;
+    left: 500px;
+    bottom: 225px;
 }
