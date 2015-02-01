@@ -32,34 +32,34 @@ body {
 }
 
 #create_new_group{
-	height: 18%;
-    width: 30%;
+	height: 15%;
+    width: 20%;
     border-color: #6495ED;
-    background-color: #BCD2EE;
-    border-radius: 5%;
+    background-color: #007f00;
+    border-radius: 1% black;
     margin: left;
     text-align:center;
     text-decoration: none;
-    color: black;
-    font-family: Times;
-    font-size: 150%;
+    color: white;
+    font-family: Lucida; 
+    font-size: 120%;
     position: fixed;
     top: 10%;
     left: 10%;
 }
 
 #advanced_search{
-	height: 18%;
-    width: 30%;
+	height: 15%;
+    width: 20%;
     border-color: #6495ED;
-    background-color: #BCD2EE;
-    border-radius: 5%;
+    background-color: #007f00;
+    border-radius: 1% black;
     margin: right;
     text-align:center;
     text-decoration: none;
-    color: black;
-    font-family: Times;
-    font-size: 150%;
+    color: white;
+    font-family: Lucida;
+    font-size: 120%;
     position: fixed;
     top: 10%;
     right: 10%;
@@ -76,7 +76,7 @@ body {
     top: 50%;
     border: 10% #BCD2EE;
     border-radius: 5%;
-    background-color: #BCD2EE;
+    background-color: #357ae8;
 }
 
 .new_group_form form{
