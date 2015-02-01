@@ -1,59 +1,98 @@
+body {
+    overflow: hidden;
+    background-image: url("https://scholarship.rice.edu/bitstream/handle/1911/70821/wrc00312.jpg?sequence=1") ;
+    background-repeat: 2;
+    background-size: 75% 100%;
+    background-position: right: 0;
+}
+
 .content{
     overflow-x: hidden;
     overflow-y: auto;
 	position: auto;
 }
 
-#new_group_form_class{
+.new_group_form{
 	position: absolute;
 	left: -999em;
 }
 
-body {
-    overflow: hidden;
-    background-image: url("https://scholarship.rice.edu/bitstream/handle/1911/70821/wrc00312.jpg?sequence=1") ;
-    background-repeat: 2;
-    background-size: 750px 606px;
-    background-position: right: 0;
+.advanced_search_form{
+    position: absolute;
+    left: -999em;
 }
 
+.text_box{
+    position: absolute;
+    left: -999em;
+}
+
+#h1 {
+    color: white;
+}
 
 #create_new_group{
-	height: 100px;
-    width: 400px;
+	height: 18%;
+    width: 30%;
     border-color: #6495ED;
     background-color: #BCD2EE;
-    border-radius: 13px;
+    border-radius: 5%;
     margin: left;
     text-align:center;
     text-decoration: none;
     color: black;
     font-family: Times;
-    font-size: 20px;
+    font-size: 150%;
     position: fixed;
-    top: 30px;
-    left: 100px;
+    top: 10%;
+    left: 10%;
 }
 
 #advanced_search{
-	height: 100px;
-    width: 400px;
+	height: 18%;
+    width: 30%;
     border-color: #6495ED;
     background-color: #BCD2EE;
-    border-radius: 13px;
+    border-radius: 5%;
     margin: right;
     text-align:center;
     text-decoration: none;
     color: black;
     font-family: Times;
-    font-size: 20px;
+    font-size: 150%;
     position: fixed;
-    top: 30px;
-    right: 100px;
+    top: 10%;
+    right: 10%;
 }
 
-.quick_search_div{
-    position: absolute;
-    left: 500px;
-    bottom: 225px;
+.quick_search_div h3{
+    color: black;
+    text-align: center;
 }
+.quick_search_div form{
+    position: fixed;
+    text-align: center;
+    left: 43%;
+    top: 50%;
+    border: 10% #BCD2EE;
+    border-radius: 5%;
+    background-color: #BCD2EE;
+}
+
+.new_group_form form{
+    text-align: center;
+    border: 10% #BCD2EE;
+    border-radius: 5%;
+    background-color: #BCD2EE;
+}
+
+.advanced_search_form form{
+    text-align: center;
+    border: 10% #BCD2EE;
+    border-radius: 5%;
+    background-color: #BCD2EE;
+}
+
+
+
+
